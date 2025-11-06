@@ -33,10 +33,10 @@
   ;; fact.
   ;; In addition, blink the cursor in insert state.
 
-  (defvar +meow-want-blink-cursor-in-insert nil
+  (defvar +meow-want-blink-cursor-in-insert t
     "Whether `blink-cursor-mode' should be enabled in INSERT state.")
 
-  (setq meow-cursor-type-normal 'box
+  (setq meow-cursor-type-normal 'bar
         meow-cursor-type-insert 'bar
         meow-cursor-type-beacon 'bar
         meow-cursor-type-default 'box
