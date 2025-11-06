@@ -60,7 +60,7 @@
    '("D" . meow-backward-delete)
    '("e" . meow-next-word)
    '("E" . meow-next-symbol)
-   '("f" . meow-find)
+   '("f" . consult-line)
    '("g" . meow-cancel-selection)
    '("G" . meow-grab)
    '("h" . meow-left)
