@@ -1,5 +1,12 @@
 ;;; editor/meow/autoload/bindings-qwerty.el -*- lexical-binding: t; -*-
 
+
+;;;###autoload
+(defun +meow--avy-till ()
+  (interactive)
+  (set-mark (point))
+  (call-interactively #'avy-goto-char))
+
 ;;;###autoload
 (defun +meow--setup-qwerty ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
@@ -87,7 +94,7 @@
    '("r" . meow-replace)
    '("R" . meow-swap-grab)
    '("s" . meow-kill)
-   '("t" . meow-till)
+   '("t" . +meow--avy-till)
    '("u" . meow-undo)
    '("U" . meow-undo-in-selection)
    '("v" . meow-visit)
