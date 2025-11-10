@@ -1,5 +1,10 @@
 ;;; editor/meow/autoload/bindings-qwerty.el -*- lexical-binding: t; -*-
 
+;;;###autoload
+(defun +meow--avy-line ()
+  (interactive)
+  (set-mark (point))
+  (avy-goto-line))
 
 ;;;###autoload
 (defun +meow--avy-till ()
@@ -90,7 +95,7 @@
    '("P" . meow-yank-pop)
    ;; Integrate with Doom's popup system instead of calling `meow-quit'.
    '("q" . nil)
-   '("Q" . meow-goto-line)
+   '("Q" . +meow--avy-line)
    '("r" . meow-replace)
    '("R" . meow-swap-grab)
    '("s" . meow-kill)
