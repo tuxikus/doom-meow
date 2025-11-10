@@ -95,7 +95,7 @@
    '("P" . meow-yank-pop)
    ;; Integrate with Doom's popup system instead of calling `meow-quit'.
    '("q" . nil)
-   '("Q" . +meow--avy-line)
+   '("Q" . nil)
    '("r" . meow-replace)
    '("R" . meow-swap-grab)
    '("s" . meow-kill)
@@ -106,7 +106,7 @@
    '("w" . meow-mark-word)
    '("W" . meow-mark-symbol)
    '("x" . meow-line)
-   '("X" . meow-goto-line)
+   '("X" . +meow--avy-line)
    '("y" . meow-save)
    '("Y" . meow-sync-grab)
    '("z" . meow-pop-selection)
