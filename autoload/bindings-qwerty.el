@@ -3,9 +3,12 @@
 ;;;###autoload
 (defun +meow--avy-line ()
   (interactive)
-  (set-mark (point))
-  (avy-goto-line)
-  (end-of-line))
+  (let ((original-point (point)))
+    (set-mark (point))
+    (avy-goto-line)
+    (if (< original-point (point))
+        (end-of-line)
+      (beginning-of-line))))
 
 ;;;###autoload
 (defun +meow--avy-till ()
