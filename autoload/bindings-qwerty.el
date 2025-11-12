@@ -4,7 +4,8 @@
 (defun +meow--avy-line ()
   (interactive)
   (set-mark (point))
-  (avy-goto-line))
+  (avy-goto-line)
+  (end-of-line))
 
 ;;;###autoload
 (defun +meow--avy-till ()
