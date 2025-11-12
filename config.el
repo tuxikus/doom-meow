@@ -273,3 +273,6 @@ switch to MOTION state."
       "Meow: this Tutorial buffer has been started in Emacs state. Meow
 bindings are not active.\n\n"
       'face 'warning))))
+
+;;;; Clipboard
+(setq meow-use-clipboard t)
